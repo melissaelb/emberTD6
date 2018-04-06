@@ -1,0 +1,10 @@
+<div>
+  {{#ui-form oldValue=model.step newValue=model.data  validation="save" cancel="cancel" bigIcon='user' smallIcon='edit' header='step' description='Editing an existing object'}}
+    <div class="field">
+      <label id="" class="" for="frmEdit-title">Title</label>
+      <div id="div-frmEdit-title" class="ui input">
+        {{input id="frmEdit-title" value=model.data.title placeholder="Title"}}
+      </div>
+    </div>
+  {{/ui-form}}
+</div>{{outlet}}

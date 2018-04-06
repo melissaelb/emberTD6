@@ -1,0 +1,8 @@
+<h2 class="ui header">Step</h2>
+{{#link-to "step.new" class="ui button"}}
+  <i class="ui plus icon"></i>
+  Add step...
+{{/link-to}}
+<div class="ui divider"></div>
+{{outlet}}
+{{#ui-table elements=model.step fields=model.fields operations=model.operations emptyMessage="No step to display"}}{{/ui-table}}
